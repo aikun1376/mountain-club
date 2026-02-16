@@ -1272,14 +1272,12 @@ body::before{
 }
 
 .activity-btn {
-  padding: 12px 26px;
-  font-size: 14px;
-  border: none;
-  border-radius: 999px;
-  background: linear-gradient(135deg, #2c5aa0, #3c6fd1);
-  color: #fff;
-  cursor: pointer;
-  transition: 0.25s;
+  margin-top:12px;
+  background:transparent;
+  border:2px solid #fff;
+  color:#375531;
+  backdrop-filter: blur(4px);
+  transition:.3s;
 }
 
 .activity-btn:hover {

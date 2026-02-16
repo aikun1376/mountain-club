@@ -1184,21 +1184,57 @@ body::before{
   justify-content: center;
 }
 
-.act1 {
+/* ===== 活動写真ギャラリー ===== */
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+/* 1枚ごとの箱 */
+.gallery-item {
   text-align: center;
+  max-width: 420px; /* PCでデカすぎ防止 */
 }
 
-.act1 img {
-  width: 200px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
+/* 画像：オリジナルサイズ維持 */
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease;
 }
 
-.act1 p {
-  margin-top: 8px;
+/* ホバーで少し浮く */
+.gallery-item img:hover {
+  transform: scale(1.03);
+}
+
+/* 説明文 */
+.gallery-item figcaption {
+  margin-top: 10px;
   font-size: 14px;
   color: #333;
+  line-height: 1.5;
 }
 
+/* ===== スマホ ===== */
+@media (max-width: 768px) {
 
+  .gallery-grid {
+    gap: 16px;
+  }
+
+  .gallery-item {
+    max-width: 100%;
+  }
+
+  .gallery-item figcaption {
+    font-size: 13px;
+  }
+}

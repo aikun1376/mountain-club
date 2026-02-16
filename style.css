@@ -1239,3 +1239,50 @@ body::before{
     color:#ffffff;
   }
 }
+/* ===== お知らせ ===== */
+
+.news {
+  max-width: 900px;
+  margin: 30px auto 10px;
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  font-size: 14px;
+}
+
+.news-list .date {
+  font-weight: 700;
+  margin-right: 12px;
+  color: #2c5aa0;
+}
+
+/* ===== 活動風景ボタン位置 ===== */
+
+.activity-button-wrap {
+  text-align: center;
+  margin: 24px 0 10px;
+}
+
+.activity-btn {
+  padding: 12px 26px;
+  font-size: 14px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2c5aa0, #3c6fd1);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.activity-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}

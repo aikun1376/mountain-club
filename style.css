@@ -1236,5 +1236,6 @@ body::before{
 
   .gallery-item figcaption {
     font-size: 13px;
+    color:#ffffff;
   }
 }
